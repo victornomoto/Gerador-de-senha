@@ -1,0 +1,134 @@
+*{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  /*fundo do gerador*/
+  body {
+    background: linear-gradient(to right, #380fb3, #000000); /* Gradiente do lazul para o preto */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+}
+
+  /*logo posição*/
+  .logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+  }
+  
+  .container-input{
+    max-width: 480px;
+    margin: 14px 0;
+  }
+  
+  .container-input span {
+    color: #ffffff;
+    font-size: 19px;
+    
+  }
+  /*slider para quantidade de caracteres*/
+  .slider {
+    margin-top: 8px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    border-radius: 5px;  
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+  }
+  /*botão do gerador*/
+  .button-cta{
+    height: 40px;
+    margin-top: 40px;
+    background-color: #0e9e09;
+    border:0;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  } 
+  /*onde copia a senha gerada*/
+  .password{
+    height: 60px;
+    background-color: rgba(78, 72, 72, 0.192);
+    border: 1px solid #b9b2b2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 4px;
+    transition: transform 0.5s;
+  }
+  .password:hover{
+    transform: scale(1.05);
+    border-color: #FFF;
+  }
+  
+  .hide{
+    display: none;
+  }
+  /*clique para copiar*/
+  .tooltip{
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: rgba(46, 44, 44, 0.527);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    text-align: center;
+  }
+  
+  .container-password:hover .tooltip{
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+  }
+  /*link de quem criou o gerador para direcionar a pagina DVL*/
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fcfcfc; /* branco do link para direcionar */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
